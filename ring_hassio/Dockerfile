@@ -6,7 +6,7 @@ ENV LANG C.UTF-8
 
 # Set shell
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
-EXPOSE 3000/tcp
+EXPOSE 3001/tcp
 
 RUN apk add --no-cache \
     nodejs \
