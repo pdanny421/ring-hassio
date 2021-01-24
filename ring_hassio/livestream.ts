@@ -53,7 +53,7 @@ var chosenCamera = CAMERA_NAME;
   ///////////////
   var camera = await getCamera()
   ///////////////
-  const publicOutputDirectory = path.join('public/')
+  const publicOutputDirectory = path.join('public2/')
   console.log('output directory: '+publicOutputDirectory)
 
   var server = http.createServer(function (req, res) {
@@ -65,8 +65,8 @@ var chosenCamera = CAMERA_NAME;
       res.writeHead(200, { 'Content-Type': 'text/html' });
       res.write('<html><head><title>Ring Livestream</title></head><body>');
       res.write('<h1>Welcome to your Ring Livestream!</h1>');
-      res.write(`<video width="352" height="198" controls autoplay src="public/stream.m3u8"></video>`);
-      res.write(`<br/>If you cannot see the video above open <a href="public/stream.m3u8">the stream</a> in a player such as VLC.`);
+      res.write(`<video width="352" height="198" controls autoplay src="public2/stream.m3u8"></video>`);
+      res.write(`<br/>If you cannot see the video above open <a href="public2/stream.m3u8">the stream</a> in a player such as VLC.`);
       res.end();
       return;
     }
